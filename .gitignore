@@ -1,5 +1,4 @@
 /vendor
-app/config/config.local.neon
 
 tests/_output/*
 
