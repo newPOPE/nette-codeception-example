@@ -6,8 +6,8 @@ php:
 install:
   - mkdir -p temp
   - mkdir -p log
-  - rm app/config/config.localn.neon
-  - ln -s app/config/config.test.neon app/config/config.local.neon
+  - rm app/config/config.local.neon
+  - cp app/config/config.test.neon app/config/config.local.neon
 
 before_script:
   - composer self-update
