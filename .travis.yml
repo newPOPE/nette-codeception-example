@@ -4,8 +4,9 @@ php:
     - 5.6
 
 install:
-  - mkdir app/temp && chmod 777 app/temp
-  - mkdir app/log && chmod 777 app/log
+  - mkdir -p temp
+  - mkdir -p log
+  - ls -al
 
 before_script:
   - composer self-update
