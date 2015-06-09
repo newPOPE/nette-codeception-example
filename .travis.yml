@@ -5,6 +5,6 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --no-interaction --prefer-dist --dev
+  - composer install --no-interaction --prefer-source --dev
 
 script: "vendor/bin/codeception run"
